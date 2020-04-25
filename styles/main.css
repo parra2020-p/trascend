@@ -1,0 +1,456 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  font-family: Montserrat, sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.yunus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.yunus img {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(45deg, #c82cdb, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: trascendAnimation 14s ease infinite;
+  -moz-animation: trascendAnimation 14s ease infinite;
+  animation: trascendAnimation 14s ease infinite;
+}
+
+.hero-title-transcend {
+  display: block;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+
+.hero-logo-content {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.hero img {
+  position: absolute;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  height: 70%;
+}
+
+.hero-logo-content {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.hero-logo-content p {
+  margin: 0;
+  color: white;
+}
+
+.hero-logo-content span {
+  font-weight: bold;
+}
+
+.mission-quote-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.mission-quote-section h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.mission-quote-section h3:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.separator {
+  background-color: #A524B5;
+  height: 2px;
+  margin: 0 40px;
+  width: 75%;
+  display: flex;
+  align-self: center;
+}
+
+.process h3, .partners h3, .participants h3 {
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.card {
+  box-shadow: 0 15px 25px 0 rgba(233,240,243,.5), 0 0 0 1px #e6ecf8;
+  border: 1px solid #f3f6f6;
+  border-bottom: 0.5px solid #BF2AD2;
+  padding: 20px;
+  margin: 20px;
+}
+
+.participants {
+  display: flex;
+  flex-direction: column;
+}
+
+.participants-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-title {
+  color: white;
+}
+
+.participants h3, .team-title {
+  font-size: 1.5rem;
+}
+
+.participant-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.participant-member h4 {
+  margin-bottom: 0;
+}
+
+.participant-member p {
+  margin-top: 5px;
+}
+
+.participant-member img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(120deg, #fbb0ff, #dc00e8);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 7s ease infinite;
+  -moz-animation: AnimationName 7s ease infinite;
+  animation: AnimationName 7s ease infinite;
+  padding: 20px 0;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:13% 0%}
+    50%{background-position:88% 100%}
+    100%{background-position:13% 0%}
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.team-card-image img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.team-card h4 {
+  margin: 0;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.team-card-image {
+  position: relative;
+}
+
+.team-card-container {
+  padding: 0 40px;
+}
+
+.team-card-description {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  transition: 0.3s;
+  align-items: center;
+}
+
+.team-card-description:hover {
+  background: rgba(198, 44, 218, 0.5);
+  padding: 10px;
+}
+
+.team-card-description:hover > p {
+  opacity: 1;
+}
+
+.team-card-description p {
+  margin: 0;
+  opacity: 0;
+  transition: 0.3s;
+  color: white;
+}
+
+.team-card-description img {
+  border-radius: 5px;
+}
+
+.team-card-icons {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.team-card-icons img {
+  width: 25px;
+  height: 22px;
+}
+
+.team-card-icons a {
+  display: flex;
+}
+
+.partners {
+  height: 100vh;
+}
+
+.contact-form {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+  background: #BF2AD2;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.footer a {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
+
+.footer img {
+  width: 100%;
+}
+
+/* Bios */
+
+.background {
+  background: linear-gradient(45deg, #c82cdb, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: trascendAnimation 14s ease infinite;
+  -moz-animation: trascendAnimation 14s ease infinite;
+  animation: trascendAnimation 14s ease infinite;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background: white;
+  height: calc(100vh - 40px);
+  overflow-y: auto;
+}
+
+.bio-container h1 {
+  text-align: center;
+}
+
+.bio-container p {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.bio-container img {
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.specialities-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+.specialities {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 25px;
+  margin: 10px;
+  background-color: rgb(235, 239, 252);
+}
+
+.specialities-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .participants-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 70px 0;
+  }
+
+  .participant-member {
+    width: 33%;
+    border-bottom: 0;
+  }
+
+  .team-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .team {
+    align-items: unset;
+    justify-content: center;
+  }
+
+  .team-card {
+    margin: 10px;
+  }
+
+  .mission-quote-section {
+    padding: 20px;
+  }
+
+  .mission-quote-section h3 {
+    font-size: 2rem;
+  }
+
+  .mission-quote-section, .process, .participants, .team, .partners {
+    padding: 50px 100px;
+  }
+
+  .process h3, .partners h3, .participants h3, .team-title, .mission-quote-section h3:nth-child(1) {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+
+  .hero img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title-transcend {
+    font-size: 4.5rem;
+  }
+
+  .hero-logo-content p {
+    font-size: 2rem;
+  }
+
+  .contact-form h3 {
+    font-size: 2rem;
+  }
+
+  .contact-form p {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+}
+
+@-webkit-keyframes trascendAnimation {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@-moz-keyframes trascendAnimation {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
+@keyframes trascendAnimation {
+    0%{background-position:0% 94%}
+    50%{background-position:100% 7%}
+    100%{background-position:0% 94%}
+}
